@@ -22,14 +22,14 @@
  * 
  *  http://www.crestronlabs.com/showthread.php?7277-eisc-simpl-pro 
  *  
- * 
+ * http://www.crestronlabs.com/showthread.php?9325-Pro-for-Noobs
  * 
  * 
  *****************************************************************************/
 
 
 
-namespace EXXON_RMC_TV_EISC
+namespace RMC_TV_EISC
 {
 	public class ControlSystem : CrestronControlSystem
 	{
@@ -41,7 +41,7 @@ namespace EXXON_RMC_TV_EISC
         public ComPort MyCOMPort;
 
         private string eISCIP = "192.168.1.48";     //ip to connect to via eisc
-        private uint eISCIPID = 10;                 //IPID for EISC
+        private uint eISCIPID = 10;                 //IPID for EISC in base 10 so 10 = 0A in hex ;)
 
         private CrestronQueue<String> RxQueue = new CrestronQueue<string>();
         private Thread RxHandler;
